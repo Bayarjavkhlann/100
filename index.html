@@ -11,10 +11,52 @@
             height: 100vh;
             
         }
+
+
+        body{
+ 
+  font-family: 'Dancing Script';
+}
+
+.baji{
+ 
+  justify-content: center;
+  align-items: center;
+
+}
+
+.a {
+  position: relative;
+  text-align: center;
+
+  font-size: calc(6em + 5vw);
+  white-space: nowrap;
+
+ 
+  background: -webkit-linear-gradient( 92deg, #95d7e3, #eb76ff );
+  background-size:600vw 600vw;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textAnimate 5s linear infinite alternate;
+}
+
+@keyframes textAnimate {
+  from {
+    filter: hue-rotate(0deg);
+    background-position-x: 0%;
+    
+  }
+  to {
+    filter: hue-rotate(360deg);
+    background-position-x: 600vw;
+    
+  }
+}
         
         h3 {
-            color: rgb(255, 255, 255);
-            padding-top: 26px;
+           
+            padding-top: 2rem;
             font-size: 3rem;
             text-align: left;
             animation-duration: 6s;
@@ -37,6 +79,7 @@
 
         #baji .a{
             height: 100px;
+            padding-top: 30px;
             font-size: 2em;
             text-align: center;
             color: rgb(255, 56, 56);
@@ -52,14 +95,13 @@
     
 </head>
 <body>
-    <section id="baji">
+    <section id="baji" class="baji">
     <h3>Happy 100th day of our love</h3>
-    <p class="a">
+    <br><br><p class="a">
         Хайртай шүү чамдаа ^~^
         
     </p>
    <b> <p class="b">2021.10.14 => FOREVER TOGETHER</p></b>
-
 
 </section>
 </body>
